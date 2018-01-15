@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Skyrim Carriage Scheduler</title>
+    <!--Linking Reset-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!--Linking Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--Linking Googlefonts-->
+
+    <!--Linking CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Linking favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+ 
+    <!-- Header -->
+    <div class="jumbotron jumbotron-fluid header">
+        <div class="container headerContainer">
+            <div class="headerBackground"></div>
+            <div class="headerContent">
+                    <img src="assets/images/skyrimTitle.png" alt="Skyrim" class="skyrimTitle">
+                    <h1 class="display-4">Carriage <br />Scheduler</h1>
+                <p class="lead">Walking takes awhile, plan your carriage today.</p>
+                <p class="lead">The Nords have smartphones so try not to think too hard about it.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carriage Schedule Board -->
+    <div class="card scheduleBoard">
+        <div class="card-header">Current Carriage Schedule</div>
+        <div class="card-body">
+            <table class="table table-dark carriageSchedule">
+                <thead>
+                    <tr>
+                        <th scope="col">Carriage Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Form to Add Trains to Schedule Board -->
+    <div class="card">
+        <div class="card-header">Add Carriage</div>
+        <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="trainName">Carriage Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="departureTime">Departure Time (HH:mm - military time)</label>
+                        <input type="time" name="time" class="form-control" id="departureTime">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="number" min="1" class="form-control" id="frequency">
+                    </div>
+                        <button type="submit" class="btn btn-primary submitBtn">Submit</button>
+                      </form>
+        </div>
+    </div>
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!--Lining Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <!--Linking Moment.js-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!--Linking Javascript-->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+              
+  </body>
+
+</html>

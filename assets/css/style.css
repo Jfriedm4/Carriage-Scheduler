@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'skyrim';
+    src: url('../fonts/trajanusbricks/trajanusBricks.ttf')  format('truetype');
+}
+
+.header {
+    height: 300px;
+    width: auto;
+    padding: 0;
+    margin-bottom: 150px;
+}
+
+.headerContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.headerBackground {
+    background-image: url("../images/skyrimBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100vw;
+    filter: blur(3px);
+    position: absolute;
+}
+
+.headerContent {
+    text-align: center;
+    z-index: 1000;
+    font-family: skyrim;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.skyrimTitle {
+    z-index: 1000;
+    position: absolute;
+    right: 36%;
+    bottom: 110%;
+}
+
+.scheduleBoard {
+    z-index: 1500;
+    margin-top: 100px;
+}
+
+.tinted-image {
+    background: 
+      /* top, transparent red, faked with gradient */ 
+      linear-gradient(
+        rgba(255, 0, 0, 0.45), 
+        rgba(255, 0, 0, 0.45)
+      ),
+      /* bottom, image */
+      url(image.jpg);
+  }
+
+.card-body {
+        background: 
+      /* top, transparent red, faked with gradient */ 
+      linear-gradient(
+        rgba(192, 192, 192, 0.45), 
+        rgba(192, 192, 192, 0.45)
+      ),
+      /* bottom, image */
+      url(../images/woodBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.card-header,
+.form-control {
+    background-color: burlywood;
+}
