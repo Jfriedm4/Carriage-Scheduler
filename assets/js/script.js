@@ -89,7 +89,11 @@ $(function() {
             </tr>
         `);
 
-    }); 
+    });
+
+    setInterval(function() {
+        window.location.reload();
+    }, 60000); 
 
 
 });
