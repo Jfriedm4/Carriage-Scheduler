@@ -68,7 +68,8 @@ $(function() {
   
         // define nextArrival
         var nextArrival = moment(departureTime, 'HH:mm').add(frequency, 'minutes').format("HH:mm");
-        console.log(nextArrival);
+        var nextArrivalDisplay = moment(nextArrival, 'HH:mm').format('hh:mm');
+        console.log(nextArrivalDisplay);
 
 
         // define minutesAway
@@ -84,7 +85,7 @@ $(function() {
                 <th scope='row'> ${name} </th>
                 <td> ${destination} </td>
                 <td> ${frequency} minutes</td>
-                <td> ${nextArrival} </td>
+                <td> ${nextArrivalDisplay} </td>
                 <td> ${minutesAway} </td>
             </tr>
         `);
